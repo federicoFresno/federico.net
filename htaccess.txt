@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>  RewriteEngine on
+  RewriteRule !\.(gif|jpg|png|css|js|html|ico|zip|rar|pdf|xml|mp4|mpg|flv|swf|mkv|ogg|avi|woff|woff2|svg|eot|ttf|jar)$ index.php
+  <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+  Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+
+  Redirect 301 /itsolutions-networking.html https://federico.net/it-solutions
+  Redirect 301 /itsolutions-hpproducts.html https://federico.net/it-solutions
+  Redirect 301 /itsolutions-microsoft.html https://federico.net/it-solutions
+  Redirect 301 /it-solutions.html https://federico.net/it-solutions
+  Redirect 301 /itsolutions.html https://federico.net/it-solutions
+
+  Redirect 301 /back-up-technologies.html https://federico.net/backup
+
+  Redirect 301 /total-care-plan.html https://federico.net/managed-services
+  Redirect 301 /tcp-plans.html https://federico.net/managed-services
+  Redirect 301 /tcp-platinum.html https://federico.net/managed-services
+  Redirect 301 /tcp-silver.html https://federico.net/managed-services
+  Redirect 301 /tcp-gold.html https://federico.net/managed-services
+
+  Redirect 301 /telecom-avaya.html https://federico.net/phone-systems
+  Redirect 301 /telecom-voip.html https://federico.net/phone-systems
+  Redirect 301 /telecom-providers.html https://federico.net/phone-systems
+  Redirect 301 /telecom.html https://federico.net/phone-systems
+
+  Redirect 301 /business-continuity.html https://federico.net/business-continuity
+  Redirect 301 /business_continuity/Contact.html https://federico.net/business-continuity
+
+  Redirect 301 /services.html https://federico.net/services
+
+  Redirect 301 /support.html https://federico.net/support
+  Redirect 301 /about.html https://federico.net/about
+  Redirect 301 /contact.html https://federico.net/contact
+  Redirect 301 /dbt-features.html https://federico.net/backup
+  Redirect 301 /dbt-technology.html https://federico.net/backup
+
+  Redirect 301 /telecom https://federico.net/phone-systems
+  Redirect 301 /total-care https://federico.net/managed-services
+  Redirect 301 /it https://federico.net/it-solutions
+
+</IfModule>
